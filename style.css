@@ -1,0 +1,219 @@
+header {
+    background: url(images/animal1.jpg) center no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding-top: 100px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
+}
+li a {
+    text-decoration: none;
+}
+li a:link {
+    color: #000;
+}
+li a:visited {
+    color: #818db3;
+}
+li a:hover {
+    color: #333;
+}
+li a:active {
+    color: #753a30;
+}
+nav {
+    background-color: rgb(255, 245, 238);
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+main {
+    margin: 50px;
+}
+main h1 {
+    color: rgb(129, 141, 179);
+    font-family: arial;
+}
+main img {
+    margin: 10px;
+    border-radius: 8px;
+}
+table {
+    margin-top: 35px;
+}
+table, caption, th, td {
+    border: 1px solid #000;
+}
+thead th {
+    background-color: rgb(255, 245, 238);
+}
+
+tbody tr:hover {
+    background-color: rgb(245, 245, 245);
+}
+th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+}
+caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color: #753a30;
+}
+footer {
+    height: 40px;
+    background-color: rgb(129, 141, 179);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(211, 218, 240);
+}
+main a {
+    color: #753a30;
+    font-weight: bold;
+}
+main a:hover {
+    text-decoration: underline;
+}
+main img:hover {
+    opacity: 0.85;
+}
+/* Paragraphs */
+main p {
+    color: #333;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 15px;
+}
+
+/* Lists inside main content (e.g. "Why Adopt" list) */
+main ul li {
+    list-style-type: disc;
+    display: list-item;
+    padding: 4px 0;
+    color: #333;
+}
+/* Form styling (apply.html) */
+fieldset {
+    border: 2px solid #753a30;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(255, 245, 238);
+}
+
+legend {
+    font-weight: bold;
+    color: #753a30;
+    padding: 0 10px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #818db3;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 4px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    background-color: rgb(129, 141, 179);
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #753a30;
+}
+/* Gallery page */
+#galleryList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    gap: 1.5em;
+    margin-top: 30px;
+    padding: 0;
+    max-width: 700px;
+  }
+  
+  #galleryList li.photo {
+    position: relative;
+    list-style-type: none;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 220px;
+  }
+  
+  #galleryList li.photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 8px;
+  }
+  
+  #galleryList .caption {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    padding: 6px 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  
+  #galleryList .description {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    padding: 10px 16px;
+    background-color: rgba(255, 245, 238, 0.95);
+    color: #753a30;
+    text-align: center;
+    border-radius: 6px;
+    visibility: hidden;
+    max-width: 85%;
+  }
+  
+  #galleryList li.photo:hover .description {
+    visibility: visible;
+  }

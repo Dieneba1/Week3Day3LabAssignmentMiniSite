@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SF Paws Adoption - Apply</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+<header style="font-size: 50px; color: #fff;">SF Paws Adoption</header>
+
+<nav>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pets.html">Adoptable Pets</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    </ul>
+    </nav>
+
+<main>
+<h1>Adoption Application</h1>
+<p>Interested in adopting a pet? Fill out the form below and a member of our team will contact you within 2 business days.</p>
+
+<form action="/submit-application" method="post">
+    <fieldset>
+        <legend>Applicant Information</legend>
+        <label>Full Name</label>
+        <input type="text" name="fullname">
+        <label>Email Address</label>
+        <input type="email" name="email">
+        <label>Phone Number</label>
+        <input type="text" name="phone">
+        <label>Which pet are you interested in?</label>
+        <select name="pet-interest">
+            <option>Biscuit</option>
+            <option>Luna</option>
+            <option>Rocky</option>
+            <option>Mochi</option>
+            <option>Ziggy</option>
+        </select>
+        <label>Do you have other pets at home?</label>
+        <input type="radio" name="other-pets" value="yes">Yes
+        <input type="radio" name="other-pets" value="no">No
+        <label>Tell us about your home and lifestyle:</label>
+        <textarea rows="5" cols="30"></textarea>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+</main>
+
+<footer>&copy; 2026 SF Paws Adoption</footer>
+
+</div>
+</body>
+</html>
